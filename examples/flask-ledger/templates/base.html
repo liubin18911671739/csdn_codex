@@ -1,0 +1,5 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>青账 · 收支分析</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body><main><header><a class="brand" href="{{ url_for('index') }}">青账 <span> / LEDGER</span></a><span class="badge">本机 · 内存分析</span></header>{% block content %}{% endblock %}<footer>让每一笔收支清晰可见 · 上传文件不写入磁盘</footer></main></body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "batch": "20261118T133012Z",
+  "skill": "Hermes gif_codex",
+  "kind": "cli_event_replay",
+  "chapters": [
+    {
+      "article": "A001",
+      "exit_code": 0,
+      "completed_events": 3
+    },
+    {
+      "article": "A002",
+      "exit_code": 0,
+      "completed_events": 5
+    },
+    {
+      "article": "A003",
+      "exit_code": 0,
+      "completed_events": 6
+    },
+    {
+      "article": "A004",
+      "exit_code": 0,
+      "completed_events": 5
+    }
+  ],
+  "gif_dimensions": [
+    1105,
+    882
+  ],
+  "visual_review": "first/last frames reviewed; Chinese legible; no native screenshots",
+  "verification": "verification.json"
+}

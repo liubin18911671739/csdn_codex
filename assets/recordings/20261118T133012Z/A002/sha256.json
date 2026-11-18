@@ -1,0 +1,14 @@
+{
+  "demo-first.png": "318dd34f22fd92d5e55d233ce58526fc4ebc63bbdd021f09e5164b398ab9da02",
+  "demo-last.png": "08eddedc850e0b75dc9d71e1332b956efe7c7f20592193e1ca10c3aa07b270de",
+  "ledger.py": "8528b0dacc1bfb038efe23920e7938c1095c9f67b04f897154763c99ab14e9f0",
+  "sample.csv": "c0c3ff36aef3fa656c5a8eb69270146eac1e9cd851f7ba0a9a10a3d8c40b3d85",
+  "prompt.txt": "da151d31a11ccdbff429c39a169ffe21f94467f9f3fb6088871c4265d755afbd",
+  "timeline.md": "f37ae8e5be2deab5545bc6381afb6c3b5cb1e171b582afe4068dbcbcfb6a8ca8",
+  "stderr.txt": "13ae7b6df65f85391e68a4ba0ff33bbe8083009027a62e4f6c752693be533728",
+  "gif-info.json": "3c1cd0dae7fac9cc24a1e48fd59b87d273c87e48d468e9daac9cb84d2ff04b97",
+  "replay.cast": "b118b953c4c555995cc01a02323d2776152e45442cb548ab29a905b8a0395796",
+  "run.json": "52d1c2c0eb683eba6e8da1973a559c84e3a6d092aba03d7a916c3e2404572248",
+  "run.jsonl": "bde75e1bfbff2de9b99e9c3872be27a27dd6cf136e8f1ecbf9fc36b7c46e1ce5",
+  "demo.gif": "013965514b1ea108ee2e1f99fe81797aeee68a25686650d31c364f9706316d78"
+}

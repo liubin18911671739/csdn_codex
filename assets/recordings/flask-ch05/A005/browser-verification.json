@@ -1,0 +1,8 @@
+{
+  "url": "http://127.0.0.1:5055",
+  "sample_upload": true,
+  "amounts_verified": true,
+  "missing_file_error_verified": true,
+  "download_via_button": true,
+  "report": "收入：5000.00\n支出：62.00\n结余：4938.00\n\n## 支出分类汇总\n\n餐饮：50.00\n交通：12.00\n"
+}

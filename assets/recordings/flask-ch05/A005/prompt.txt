@@ -1,0 +1,4 @@
+在当前目录创建Flask收支网站。读取已有ledger.py和test_ledger.py，保留CLI行为及8项测试。可提取ledger_core.py复用逻辑。创建app.py、templates、static/style.css、test_app.py、requirements.txt和README.md。用已安装Flask，不安装包，不访问桌面或私人文件。
+首页GET /提供中文CSV上传、字段说明、样例下载；POST /analyze内存解析utf-8-sig CSV，不持久保存上传文件。成功显示收入支出结余卡片、支出分类表，浏览器端用Blob下载Markdown报告，使用Jinja tojson安全序列化。1MiB上传上限。缺文件、编码、列、日期、类型、负数、NaN或三位小数均明确报错，不显示部分结果；模板自动转义。空表返回零。提供返回首页入口和GET /sample.csv下载合成样例。
+页面精致简洁，蓝绿配色，移动适配，不用外部CDN。记录仅本机启动命令 python3 -m flask --app app run --host 127.0.0.1 --port 5055，不打开debug，不启动长期服务。
+编写unittest覆盖路由、正常上传、BOM、空表、缺失、非法金额日期类型、超限和HTML转义；运行全部测试，真实保留失败再修复，不伪造结果。只修改本练习目录。

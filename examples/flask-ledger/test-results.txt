@@ -1,0 +1,24 @@
+test_bad_encoding (test_app.AppTest) ... ok
+test_bom (test_app.AppTest) ... ok
+test_empty (test_app.AppTest) ... ok
+test_html_escaping (test_app.AppTest) ... ok
+test_invalid_records (test_app.AppTest) ... ok
+test_malformed_csv (test_app.AppTest) ... ok
+test_missing_file (test_app.AppTest) ... ok
+test_no_partial_results (test_app.AppTest) ... ok
+test_routes (test_app.AppTest) ... ok
+test_sample_and_normal_upload (test_app.AppTest) ... ok
+test_size_limit (test_app.AppTest) ... ok
+test_bom (test_ledger.LedgerCLITest) ... ok
+test_empty_tables (test_ledger.LedgerCLITest) ... ok
+test_generate_report (test_ledger.LedgerCLITest) ... ok
+test_invalid_records (test_ledger.LedgerCLITest) ... ok
+test_missing_input (test_ledger.LedgerCLITest) ... ok
+test_refuse_output_equal_to_input (test_ledger.LedgerCLITest) ... ok
+test_refuse_overwrite (test_ledger.LedgerCLITest) ... ok
+test_sample_totals_and_categories (test_ledger.LedgerCLITest) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.698s
+
+OK

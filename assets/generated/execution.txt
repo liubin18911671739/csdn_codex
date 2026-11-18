@@ -1,0 +1,74 @@
+COMMAND: /Library/Developer/CommandLineTools/usr/bin/python3 examples/ledger/ch02/ledger.py --input examples/ledger/ch02/sample.csv
+EXIT: 0
+# 收支报告
+
+收入：5000.00
+
+支出：62.00
+
+结余：4938.00
+
+支出 / 交通：12.00
+
+支出 / 餐饮：50.00
+
+收入 / 工资：5000.00
+
+
+COMMAND: /Library/Developer/CommandLineTools/usr/bin/python3 examples/ledger/ch03/ledger.py --input examples/ledger/ch03/sample.csv
+EXIT: 0
+# 收支报告
+
+收入：5000.00
+
+支出：62.00
+
+结余：4938.00
+
+支出 / 交通：12.00
+
+支出 / 餐饮：50.00
+
+收入 / 工资：5000.00
+
+
+COMMAND: /Library/Developer/CommandLineTools/usr/bin/python3 examples/ledger/ch04/ledger.py --input examples/ledger/ch04/sample.csv
+EXIT: 0
+# 收支报告
+
+收入：5000.00
+
+支出：62.00
+
+结余：4938.00
+
+支出 / 交通：12.00
+
+支出 / 餐饮：50.00
+
+收入 / 工资：5000.00
+
+
+COMMAND: /Library/Developer/CommandLineTools/usr/bin/python3 -m unittest discover -s examples/ledger/ch04 -v
+EXIT: 0
+test_invalid_and_bom (test_ledger.LedgerTests) ... ok
+test_sample (test_ledger.LedgerTests) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+OK
+
+
+COMMAND: /Library/Developer/CommandLineTools/usr/bin/python3 examples/ledger/ch03/ledger.py --input /Users/robin/project/csdn_codex/examples/ledger/ch03/sample.csv --output /var/folders/37/350c7jsx0tjfht3d58rhn3340000gn/T/tmpn87iw7wv/report.md
+EXIT: 0
+
+
+COMMAND: /Library/Developer/CommandLineTools/usr/bin/python3 examples/ledger/ch03/ledger.py --input /Users/robin/project/csdn_codex/examples/ledger/ch03/sample.csv --output /var/folders/37/350c7jsx0tjfht3d58rhn3340000gn/T/tmpn87iw7wv/report.md
+EXIT: 1
+[Errno 17] File exists: '/var/folders/37/350c7jsx0tjfht3d58rhn3340000gn/T/tmpn87iw7wv/report.md'
+
+
+COMMAND: /Library/Developer/CommandLineTools/usr/bin/python3 examples/ledger/ch04/ledger.py --input /var/folders/37/350c7jsx0tjfht3d58rhn3340000gn/T/tmpn87iw7wv/absent
+EXIT: 1
+[Errno 2] No such file or directory: '/var/folders/37/350c7jsx0tjfht3d58rhn3340000gn/T/tmpn87iw7wv/absent'

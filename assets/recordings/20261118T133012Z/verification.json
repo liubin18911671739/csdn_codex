@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-18T13:35:14.113814+00:00",
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "checks": [
+    "A002: reference totals",
+    "A002: invalid fields, empty BOM, missing input, input unchanged",
+    "A003: reference totals",
+    "A003: invalid fields, empty BOM, missing input, input unchanged; report export and no overwrite",
+    "A004: reference totals",
+    "A004: invalid fields, empty BOM, missing input, input unchanged; report export and no overwrite",
+    "A004 generated unittest suite passed independently"
+  ],
+  "unittest_stdout": "",
+  "unittest_stderr": "test_bom (test_ledger.LedgerCLITest) ... ok\ntest_empty_tables (test_ledger.LedgerCLITest) ... ok\ntest_generate_report (test_ledger.LedgerCLITest) ... ok\ntest_invalid_records (test_ledger.LedgerCLITest) ... ok\ntest_missing_input (test_ledger.LedgerCLITest) ... ok\ntest_refuse_output_equal_to_input (test_ledger.LedgerCLITest) ... ok\ntest_refuse_overwrite (test_ledger.LedgerCLITest) ... ok\ntest_sample_totals_and_categories (test_ledger.LedgerCLITest) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.544s\n\nOK\n"
+}

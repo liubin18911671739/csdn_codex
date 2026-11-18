@@ -1,0 +1,9 @@
+file 'browser-home.png'
+duration 3
+file 'browser-result.png'
+duration 5
+file 'browser-error.png'
+duration 4
+file 'browser-home.png'
+duration 3
+file 'browser-home.png'

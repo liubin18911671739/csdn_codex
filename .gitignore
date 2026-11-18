@@ -3,3 +3,5 @@ __pycache__/
 .env
 *.token
 examples/work/
+
+examples/flask-ledger/.venv/

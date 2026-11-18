@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="hero"><p class="eyebrow">YOUR MONEY, CLEARLY.</p><h1>一份账单，<br>看清收支全貌。</h1><p>上传中文 CSV，即刻汇总收入、支出与分类。<br>报告由浏览器下载，上传文件仅在本次请求中处理。</p></section>
+{% if error %}<div class="error" role="alert"><strong>无法分析</strong><pre>{{ error }}</pre></div>{% endif %}
+<section class="panel"><h2>开始分析</h2><form action="{{ url_for('analyze_upload') }}" method="post" enctype="multipart/form-data"><label for="file">选择 CSV 账单</label><input id="file" name="file" type="file" accept=".csv,text/csv" required><p class="hint">UTF-8 / UTF-8 BOM · 请求上限 1 MiB（含表单开销）</p><button type="submit">生成收支概览 <span>→</span></button></form><a class="sample" href="{{ url_for('sample') }}">没有账单？下载合成样例 CSV ↓</a></section>
+<section class="panel"><h2>CSV 字段说明</h2><div class="table-wrap"><table><thead><tr><th>字段</th><th>填写规则</th></tr></thead><tbody><tr><td>日期</td><td>有效日期，格式 YYYY-MM-DD，如 2026-11-01</td></tr><tr><td>类型</td><td>收入 或 支出</td></tr><tr><td>类别</td><td>非空，如工资、餐饮、交通</td></tr><tr><td>金额</td><td>非负有限数值，最多两位小数；不接受 NaN、无穷大</td></tr><tr><td>备注</td><td>必须包含此列，内容可留空</td></tr></tbody></table></div><p class="hint">首行须包含上述五列，可调整顺序。空文件或只有表头时返回零；任何记录错误均取消整次统计。</p></section>
+{% endblock %}

@@ -1,69 +1,47 @@
-# 用 AI 完成真实工作
+# Codex 应用实战
 
-面向愿意学习少量命令行的 Windows 办公、研究与创作用户，筹备 CSDN 付费专栏及后续书稿。教程围绕真实任务、明确输入和可检查输出组织。
+面向能安装软件、愿意使用少量命令的实用用户，筹备 CSDN 付费专栏。首季24篇，以 CLI 为主线、IDE 为配套入口，围绕编程、文件、文档、数据与研究任务交付可检查成果。
 
-## 当前进度
+付费内容配套练习输入、任务指令、纠错过程和验收方法。A001 免费试读，其余为付费候选；专栏不包含模型订阅或第三方费用。价格、上线时间待确定，不自动发布。
 
-截至 2026年11月18日，以 [文章元数据](planning/articles.json) 为准：15 个单元、60 篇选题，其中 3 篇 draft、57 篇 planned，暂无 ready 文章。
+## 进度与导航
 
-已有草稿为 [A001 入门](articles/001-start.md)、[A009 文件整理](articles/009-files.md)、[A042 LibreOffice 迁移](articles/042-libreoffice.md)。历史稿保留在 `articles/archive/`，不计作新增文章。
+现有 A001—A004 四篇草稿，均未达到 ready。A009、A042 当前正文缺失，保留编号待确认。Windows 为目标环境，当前 macOS 检查不替代 Windows 实测。
 
-当前编写环境为 macOS，三篇草稿均待 Windows 实测，尚未采集截图。[验证记录](planning/validation.md)记载了文件整理脚本在本机 Python 3.12 合成数据上的检查，该结果不替代 Windows 验证。
+- [首季与后续目录](planning/catalog.md)
+- [文章元数据](planning/articles.json)
+- [产品与排期](planning/strategy.md)
+- [待办](TODO.md)
+- [个人文风卡](style/个人文风卡.md)
+- [来源边界](sources/README.md)
+- [发布清单](publishing/checklist.md)
 
-下一步先修订 A001，再按编号推进 A002、A003。具体问题、优先级及验收标准见 [TODO](TODO.md)。
 
-## 仓库导航
+## 前四篇图文重写稿
 
-| 位置 | 用途 |
-|---|---|
-| [AGENTS.md](AGENTS.md) | 项目写作与操作规范 |
-| [planning/](planning/catalog.md) | 文章元数据、完整目录、排期与审查记录 |
-| [articles/](articles/001-start.md) | 当前文章草稿；archive 保存历史版本 |
-| [style/](style/个人文风卡.md) | 个人文风卡，当前仅由两篇样本支持 |
-| [sources/](sources/README.md) | 来源与能力映射；工具、技能清单为会话快照 |
-| [templates/](templates/article.md) | 文章、验证与勘误模板 |
-| [examples/](examples/organize.py) | 随文可运行代码 |
-| [assets/](assets/README.md) | 截图及素材权利登记 |
-| scripts/ | 结构检查与目录生成脚本 |
-| [publishing/](publishing/checklist.md) | 专栏介绍及人工发布清单 |
-| [book/](book/outline.md) | 后续成书路线 |
+- [第1章：先交付环境记录](articles/001-start.md)
+- [第2章：生成收支汇总工具](articles/002-setup.md)
+- [第3章：分类汇总与报告保护](articles/003-task.md)
+- [第4章：8项测试与交付验收](articles/004-review.md)
 
-## 常用命令
+本版按真实末帧、GIF、代码与执行记录重写，图片放在对应步骤，保留提示词、Mermaid、排错与迁移练习。代码附件统一引用20261118T133012Z批次；早期示例不作为本版交付依据。四篇仍为draft，Windows与安装登录界面待验证。
 
-在项目根目录使用 Python 3，以下脚本仅使用标准库：
+## 维护
 
-```sh
-python3 scripts/check.py
-```
+修改元数据后运行 `python3 scripts/index.py`，再运行 `python3 scripts/check.py`。检查覆盖顺序、资源、证据关联和本地链接，不代表完成技术验收。
 
-检查文章数量、部分必填元数据、资源文件与 Markdown 本地链接。目前脚本固定要求 3 篇 draft；推进文章状态前需处理这一限制。检查通过不等于教程完成技术验收，也不验证外部链接或账号权限。
+按编号逐篇交付，不批量扩写整季。每篇先核官方来源，后起草，再分别完成事实与文风审查。ready 需有验证 Markdown 及同名 JSON，包含 article、technical_pass、sources_pass、environment、actual_outputs、source_checks；证据必须来自真实检查，字段通过不能代替人工审查。
 
-修改文章元数据后运行：
+历史目录保存在 planning/archive，原稿保存在 articles/archive。正文保留权利记录，代码独立标注许可；不得自动发布、签约、支付或静默覆盖原件。
 
-```sh
-python3 scripts/index.py
-```
+本轮已扩写前四篇并添加 Mermaid 图；全项目按个人文风卡编辑。Windows、安装登录及IDE界面仍待验证；独立Codex CLI和GIF已完成验证，代码授权待作者确认。
 
-此命令会根据 `planning/articles.json` 重写 `planning/catalog.md`，不要在生成目录中单独维护选题信息。以上命令在本机检查，不作为 Windows 实测记录；Windows 使用已确认可用的 Python 启动命令。
+前四章已改为安装→收支工具初版→报告扩展→测试交付。代码样例本机检查通过；正文仍需进一步扩写、减少重复，截图和平台验证待完成。
 
-文件整理示例默认只预览，加 `--apply` 才复制，目标目录已存在则拒绝执行。完整练习与验收步骤见 A009。
+## 四章CLI动图批次 20261118T133012Z
 
-## 逐篇交付流程
+已按Hermes gif_codex技能完成四次独立CLI任务、四份GIF及静态帧，事件重放明确标注。生成代码经独立验收，第4章8个测试通过。Windows与安装登录截图仍待验证，四篇保持draft。
 
-1. 按元数据编号推进，先修订 A001，再新写 A002、A003 等；到 A009、A042 时修订已有稿，不重复建稿。
-2. 先读个人文风卡，明确任务、输入和验收输出，再查官方技术来源。会话私有工具名不能写作公开 API。
-3. 使用文章模板起草，分别完成事实审查与文风审查；文风通过不替代技术验收。
-4. 按[验证模板](templates/validation.md)记录环境、版本、输入、实际输出、失败与恢复、截图及未验证项。Windows 操作未经实测必须注明。
-5. 每次交稿同步文章元数据、验证记录及生成目录。只有测试和来源检查完成后才能改为 ready。
-6. 发布前执行人工发布清单，由作者人工提交并登记 URL、价格及版本。
+## 第五章Flask网站
 
-`planned` 表示已列入选题，`draft` 表示已有草稿，`ready` 表示已满足交付检查要求；ready 不代表已经发布。不得编造截图、测试结果、引用或账号权限。
-
-## 权利、成本与发布边界
-
-正文保留出版权记录，代码独立标注许可；截图和外部素材登记作者、来源、许可及出版使用范围。当前代码许可与逐篇权利记录仍待补齐，不能据仓库可读推断授权范围。
-
-批处理默认预览，不得静默覆盖或删除原文件。不自动发布、签约或提交支付。平台资格、价格、协议、AI 声明与出版授权在上线前核实；[商业与排期](planning/strategy.md)中的价格和时间均为内部规划。
-
-模型订阅、API、云算力及素材费用另行核对。来源中的会话快照不代表公共接口文档、服务登录状态或订阅权益承诺。
-# csdn_codex
+[文章](articles/005-flask.md)与[项目](examples/flask-ledger/README.md)已完成；19项测试及浏览器上传下载验证通过。本机运行地址http://127.0.0.1:5055/，尚未公网部署。

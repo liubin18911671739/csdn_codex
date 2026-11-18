@@ -1,0 +1,90 @@
+{
+  "system": "macOS-27.0.1-arm64-arm-64bit",
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "records": [
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "examples/ledger/ch02/ledger.py",
+        "--input",
+        "examples/ledger/ch02/sample.csv"
+      ],
+      "stdout": "# 收支报告\n\n收入：5000.00\n\n支出：62.00\n\n结余：4938.00\n\n支出 / 交通：12.00\n\n支出 / 餐饮：50.00\n\n收入 / 工资：5000.00\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "examples/ledger/ch03/ledger.py",
+        "--input",
+        "examples/ledger/ch03/sample.csv"
+      ],
+      "stdout": "# 收支报告\n\n收入：5000.00\n\n支出：62.00\n\n结余：4938.00\n\n支出 / 交通：12.00\n\n支出 / 餐饮：50.00\n\n收入 / 工资：5000.00\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "examples/ledger/ch04/ledger.py",
+        "--input",
+        "examples/ledger/ch04/sample.csv"
+      ],
+      "stdout": "# 收支报告\n\n收入：5000.00\n\n支出：62.00\n\n结余：4938.00\n\n支出 / 交通：12.00\n\n支出 / 餐饮：50.00\n\n收入 / 工资：5000.00\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "examples/ledger/ch04",
+        "-v"
+      ],
+      "stdout": "",
+      "stderr": "test_invalid_and_bom (test_ledger.LedgerTests) ... ok\ntest_sample (test_ledger.LedgerTests) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.002s\n\nOK\n",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "examples/ledger/ch03/ledger.py",
+        "--input",
+        "/Users/robin/project/csdn_codex/examples/ledger/ch03/sample.csv",
+        "--output",
+        "/var/folders/37/350c7jsx0tjfht3d58rhn3340000gn/T/tmpn87iw7wv/report.md"
+      ],
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "examples/ledger/ch03/ledger.py",
+        "--input",
+        "/Users/robin/project/csdn_codex/examples/ledger/ch03/sample.csv",
+        "--output",
+        "/var/folders/37/350c7jsx0tjfht3d58rhn3340000gn/T/tmpn87iw7wv/report.md"
+      ],
+      "stdout": "",
+      "stderr": "[Errno 17] File exists: '/var/folders/37/350c7jsx0tjfht3d58rhn3340000gn/T/tmpn87iw7wv/report.md'\n",
+      "exit_code": 1
+    },
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "examples/ledger/ch04/ledger.py",
+        "--input",
+        "/var/folders/37/350c7jsx0tjfht3d58rhn3340000gn/T/tmpn87iw7wv/absent"
+      ],
+      "stdout": "",
+      "stderr": "[Errno 2] No such file or directory: '/var/folders/37/350c7jsx0tjfht3d58rhn3340000gn/T/tmpn87iw7wv/absent'\n",
+      "exit_code": 1
+    }
+  ]
+}
