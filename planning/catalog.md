@@ -1,0 +1,62 @@
+# 专栏完整目录
+
+- A001 | AI 工作环境 | Windows AI 工作流入门：从一段杂乱记录开始，把第一个任务做完整 | draft | Windows 待实测
+- A002 | AI 工作环境 | 安装配置 | planned | 待验证
+- A003 | AI 工作环境 | 任务描述与授权 | planned | 待验证
+- A004 | AI 工作环境 | 结果检查与故障排查 | planned | 待验证
+- A005 | 编程 | 创建小工具 | planned | 待验证
+- A006 | 编程 | 修改与调试 | planned | 待验证
+- A007 | 编程 | 测试与版本管理 | planned | 待验证
+- A008 | 编程 | 打包交付 | planned | 待验证
+- A009 | 文件处理 | Windows 文件整理实战：让 AI 写脚本，先预览，再批量处理 | draft | Windows 待实测
+- A010 | 文件处理 | PDF 与 OCR | planned | 待验证
+- A011 | 文件处理 | Word 格式整理 | planned | 待验证
+- A012 | 文件处理 | 跨格式转换 | planned | 待验证
+- A013 | 数据分析 | Excel 与 CSV 清洗 | planned | 待验证
+- A014 | 数据分析 | 统计与图表 | planned | 待验证
+- A015 | 数据分析 | 交互报告 | planned | 待验证
+- A016 | 数据分析 | 可复核分析案例 | planned | 待验证
+- A017 | 图像处理 | 批量修图 | planned | 待验证
+- A018 | 图像处理 | 抠图与清理 | planned | 待验证
+- A019 | 图像处理 | 生成与编辑 | planned | 待验证
+- A020 | 图像处理 | 平台尺寸与导出 | planned | 待验证
+- A021 | 视频处理 | 剪辑与转码 | planned | 待验证
+- A022 | 视频处理 | 字幕与音频 | planned | 待验证
+- A023 | 视频处理 | 高光短片 | planned | 待验证
+- A024 | 视频处理 | 批量制作流程 | planned | 待验证
+- A025 | PPT | 资料到大纲 | planned | 待验证
+- A026 | PPT | 模板与版式 | planned | 待验证
+- A027 | PPT | 图表与视觉 | planned | 待验证
+- A028 | PPT | 讲稿与交付 | planned | 待验证
+- A029 | 数字人 | 授权素材与脚本 | planned | 待验证
+- A030 | 数字人 | 讲解视频入门 | planned | 待验证
+- A031 | 数字人 | 本地部署 | planned | 待验证
+- A032 | 数字人 | 接口编排 | planned | 待验证
+- A033 | 磁盘清理 | 空间诊断 | planned | 待验证
+- A034 | 磁盘清理 | 缓存与大文件 | planned | 待验证
+- A035 | 磁盘清理 | 重复文件 | planned | 待验证
+- A036 | 磁盘清理 | 备份与维护 | planned | 待验证
+- A037 | 学术写作 | 文献定位与核验 | planned | 待验证
+- A038 | 学术写作 | 论文结构 | planned | 待验证
+- A039 | 学术写作 | 图表与证据 | planned | 待验证
+- A040 | 学术写作 | 修改与投稿材料 | planned | 待验证
+- A041 | 开源替代 | 软件选型 | planned | 待验证
+- A042 | 开源替代 | 用 LibreOffice 替代付费办公软件：先迁移三份文件，再决定换多少 | draft | Windows 待实测
+- A043 | 开源替代 | 创意软件替代 | planned | 待验证
+- A044 | 开源替代 | 兼容与回退 | planned | 待验证
+- A045 | 小说撰写 | 故事设定 | planned | 待验证
+- A046 | 小说撰写 | 大纲与角色 | planned | 待验证
+- A047 | 小说撰写 | 章节修改 | planned | 待验证
+- A048 | 小说撰写 | 连续性管理 | planned | 待验证
+- A049 | Google 协作 | Drive 与 Gmail | planned | 待验证
+- A050 | Google 协作 | Docs | planned | 待验证
+- A051 | Google 协作 | Sheets | planned | 待验证
+- A052 | Google 协作 | Slides 跨工具流程 | planned | 待验证
+- A053 | 百度网盘 | 客户端整理 | planned | 待验证
+- A054 | 百度网盘 | 备份恢复 | planned | 待验证
+- A055 | 百度网盘 | 分享权限 | planned | 待验证
+- A056 | 百度网盘 | 开放平台进阶 | planned | 待验证
+- A057 | 综合项目 | 研究报告 | planned | 待验证
+- A058 | 综合项目 | 汇报演示 | planned | 待验证
+- A059 | 综合项目 | 讲解视频 | planned | 待验证
+- A060 | 综合项目 | 个人工作流 | planned | 待验证
